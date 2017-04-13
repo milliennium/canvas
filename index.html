@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 400px;
+            height: 258px;
+            position: relative;
+        }
+        .wrapperpoli{
+            width: 400px;
+            height: 318px;
+            position: relative;
+        }
+        canvas{
+            position:absolute;
+            left:80px;
+            top:37px;
+            
+        }
+        .wrapper .pietext{
+            transition: all 1s ease 2s;
+            position:absolute;
+            opacity: 0;
+            font-weight:900;
+        }
+        .wrapper .pietext:nth-child(1){
+            
+            left: 120px;
+            top: 0px;
+        }
+        .wrapper .pietext:nth-child(2){
+           
+            left: 268px;
+            top: 46px;
+        }
+        .wrapper .pietext:nth-child(3){
+            left: 17px;
+            top: 108px;
+        }
+        .wrapper .pietext:nth-child(4){
+            
+            left: 128px;
+            top: 221px;
+        }
+        .wrapper .pietext:nth-child(5){
+            
+            left: 250px;
+            top: 192px
+        }
+        .wrapperpoli p{
+            float:left;
+            margin:295px 18px 0 0;
+            font-weight:600;
+            opacity: 0;
+            transition: all 1s ease 1s;
+        }
+        .wrapperpoli .politext:nth-child(1){
+           margin-left:115px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class='wrapper'>
+        <p class='pietext'>react</p>
+        <p class='pietext'>js</p>
+        <p class='pietext'>jquery</p>
+        <p class='pietext'>css3</p>
+        <p class='pietext'>html5</p>
+    </div>
+    <div class='wrapperpoli'>
+        <p class='politext'>js</p>
+        <p class='politext'>h5</p>
+        <p class='politext'>css3</p>
+        <p class='politext'>jq</p>
+        <p class='politext'>react</p>
+    </div>
+    <script src='jquery.js'></script>
+    <script src='index.js'></script>
+</body>
+</html>
